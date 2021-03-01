@@ -30,6 +30,12 @@ export default class App extends Component{
                            $('.continue').fadeOut(0);
                            $('.foot').fadeIn(0);
                        }
+                       if($(this).hasClass('wholeLastPageFooter')){
+                           $(this).find('.footerCover').fadeOut(0);
+                           $(this).find('.footerCover').delay(500).fadeIn(300);
+                           $(this).find('.footerFourthPage').fadeOut(0);
+                           $(this).find('.footerFourthPage').slideDown(500);
+                       }
                        $('header>nav').slideDown(300);
                        let Index = $(this).index('.Page');
                        if (Index > -1){
