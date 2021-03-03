@@ -17,6 +17,8 @@ export default class Header extends Component{
             $('.foot').fadeOut(0);
             $('.wholePages>section').removeClass('heightIncrement');
             $('header>nav').slideUp(300);
+            $('header>.logo').fadeTo(300,0);
+            $('header>.logo').css('height','0');
             let Index = $('.wholeFirstPage').index('.Page');
             if (Index > -1){
                 $('.firstPageName1').css('margin-top' , -110*Index+'px')

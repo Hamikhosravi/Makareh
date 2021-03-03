@@ -16,6 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition:0.2s linear;
+    opacity:0;
 }
 .header>.logo>img{
     height: 90%;

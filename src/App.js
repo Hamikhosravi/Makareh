@@ -37,6 +37,8 @@ export default class App extends Component{
                            $(this).find('.footerFourthPage').slideDown(500);
                        }
                        $('header>nav').slideDown(300);
+                       $('header>.logo').fadeTo(300,1);
+                       $('header>.logo').css('height','100%');
                        let Index = $(this).index('.Page');
                        if (Index > -1){
                            $('.firstPageName1').css('margin-top' , -110*Index+'px')
@@ -59,6 +61,8 @@ export default class App extends Component{
                         }
                         if ($(this).prev().hasClass('wholeFirstPage')){
                             $('header>nav').slideUp(300);
+                            $('header>.logo').fadeTo(300,0);
+                            $('header>.logo').css('height','0');
                         }
                         let Index = $(this).index('.Page')-1;
                         if (Index > -1){
